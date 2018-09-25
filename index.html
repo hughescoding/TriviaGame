@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TriviaGame</title>
+
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+     <!-- Container to hold everything. -->
+        <div class="container">
+
+            <!-- Jumbotron title section. -->
+            <div class='jumbotron'>
+                <div class='container2'>
+
+                 <h1>My Lego Trivia Game</h1>
+                    <br>
+                 <h2>Let's test your Lego knowledge!</h2>
+                 <br>
+                    <P>Try to answer 6 true or false questions in 60 seconds!</P>
+                    <br>
+                    <button type="button" class="btn btn-outline-primary btn-lg" id="start">Click to Begin</button>
+                    <br>
+                    <P id="timer-display"></P>
+                </div>
+            </div>
+            <div class="questions" id="question1">The name Lego comes from the Danish words leg & godt, this translates to "Play Well". 
+                    <br>
+                    <button type="button" class="btn btn-outline-success btn-lg" id="q1true qbutton">True</button> 
+                    <button type="button" class="btn btn-outline-success btn-lg" id="q1false qbuton">False</button>
+            </div>
+            <div class="answers" id="answer1 hide">TRUE! The name Lego comes from the Danish words leg & godt, this translates to "Play Well".
+                </div>
+            <div class="questions" id="question2">Lego headquarters is located in Copenhagen Denmark. 
+                            <br>
+                            <button type="button" class="btn btn-outline-success btn-lg" id="q2true">True</button> 
+                            <button type="button" class="btn btn-outline-success btn-lg" id="q2false">False</button>
+            </div>
+            <div class="answers" id="answer2 hide">False! Lego HeadQuarters is located in Billund, Denmark, NOT Copenhagen.
+                </div>
+            <div class="questions" id="question3">LegoLand in Winter Haven Florida was the first US LegoLand park. 
+                            <br>
+                            <button type="button" class="btn btn-outline-success btn-lg" id="q3true">True</button> 
+                            <button type="button" class="btn btn-outline-success btn-lg" id="q3false">False</button>
+            </div>
+            <div class="answers" id="answer3 hide">TRUE! The name Lego comes from the Danish words leg & godt, which translate to "Play Well".
+                </div>
+            <div class="questions" id="question4">Lego's have been played with in space. 
+                            <br>
+                            <button type="button" class="btn btn-outline-success btn-lg" id="q4true">True</button> 
+                            <button type="button" class="btn btn-outline-success btn-lg" id="q4false">False</button>
+            </div>
+            <div class="answers" id="answer4 hide">TRUE! The name Lego comes from the Danish words leg & godt, this translates to "Play Well".
+                </div>
+            <div class="questions" id="question5">Six bricks of 2 × 4 stud can be combined in 915,103,765 ways.
+                            <br>
+                            <button type="button" class="btn btn-outline-success btn-lg" id="q5true">True</button> 
+                            <button type="button" class="btn btn-outline-success btn-lg" id="q5false">False</button>
+            </div>
+            <div class="answers" id="answer5 hide">TRUE! The name Lego comes from the Danish words leg & godt, this translates to "Play Well".
+                </div>
+            <div class="questions" id="question6">Mindstorms, Lego's programable robotics kits got their start at the MIT Media Lab "Where tomorrow is invented" 
+                            <br>
+                            <button type="button" class="btn btn-outline-success btn-lg" id="q6true">True</button> 
+                            <button type="button" class="btn btn-outline-success btn-lg" id="q6false">False</button>
+            </div>
+            <div class="answers" id="answer6 hide">TRUE! The name Lego comes from the Danish words leg & godt, this translates to "Play Well".
+                </div>
+        </div>
+   
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+        <script type="text/javascript" src="./assets/javascript/app.js"></script>
+</body>
+</html>
