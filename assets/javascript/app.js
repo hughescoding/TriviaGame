@@ -1,16 +1,22 @@
 
-//everything Nested in one function
+//everything nested in one function
 function init() {
 
     console.log('hello'); //Is JS Connected?
    
-    var $play = $('#start');
+    var $game = $('#start');
     var $countdown = $("#timer-display");
     
     //Variables for timer
     var timeRemaining = 31;
     var timerOn = false;
     var timerId = false;
+    
+    //variables for answers
+    var numCorrect = 0
+    var answers = ["#q1true", "#q2false", "#q3false", "#q4true", "#q5true", "#q6true"]
+    
+   
 
   //hide the answers function
   function hideAnswers() {
@@ -41,18 +47,24 @@ function init() {
       }
     }
   
-    $play.on('click', () => {
+    $game.on('click', () => {
       if (!timerOn) {
         timerOn = true;
         timerId = setInterval(countDownLogic, 1000);
       }
     });
-  
+    
+    //Log the button click
+    $("button").click(function() {
+      console.log(this.id); 
+      var userSelection = [];
+      //userSelection[i++] = $(this).attr('id');
+      
+      
+  });
+
   }
  
   $(init);
-
   
-  
-
   
