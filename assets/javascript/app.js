@@ -52,7 +52,7 @@ function init() {
         }
         console.log(countMatched);
         console.log(countNotMatched);
-        //I dont rember going over how to make a second line of text in alert during class, stackoverflow to the resue! \n does the trick.
+        //I dont remember going over how to make a second line of text in alert during class, stackoverflow to the resue! \n does the trick.
         alert("You got" + " " + countMatched + " " + "correct!" + "\nReview your answers below")
         $(showAnswers);
       } else {
@@ -74,7 +74,7 @@ function init() {
     userSelection.push(this.id);
     console.log(userSelection);
   });
-  //Obviously this is not very dry code.
+  //Obviously this is not very dry code for the button hide, I intend to research other ways to do this, i ran out of time and it does function.
   $(function () {
     $("#q1true , #q1false").on("click", function () {
       $("#q1false , #q1true").hide();
