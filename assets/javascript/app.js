@@ -2,9 +2,9 @@
 //everything nested in one function
 function init() {
 
-  console.log('hello'); //Is JS Connected?
+  console.log("hello"); //Is JS Connected?
 
-  var $game = $('#start');
+  var $game = $("#start");
   var $countdown = $("#timer-display");
 
   //Variables for timer
@@ -38,10 +38,10 @@ function init() {
 
       // when countdown hits zero
       if (timeRemaining === 0) {
-        alert('time is up!');
-      
+        alert("time is up!");
+
         var length = Math.min(answers.length, userSelection.length);
-        //Because my countdown logic also records the 'start' click, I had to set a negative value to get the answer count right!
+        //Because my countdown logic also records the "start" click, I had to set a negative value to get the answer count right!
         var countMatched = -1, countNotMatched = -1;
 
         for (var index = 0; index < length; index++) {
@@ -52,16 +52,16 @@ function init() {
         }
         console.log(countMatched);
         console.log(countNotMatched);
-        //I don't rember going over how to make a second line of text in alert during class, stackoverflow to the resue! \n does the trick.
-        alert('You got' + " " + countMatched + " " + "correct!" + "\nReview your answers below" )
+        //I dont rember going over how to make a second line of text in alert during class, stackoverflow to the resue! \n does the trick.
+        alert("You got" + " " + countMatched + " " + "correct!" + "\nReview your answers below")
         $(showAnswers);
       } else {
-        console.log('Counting..');
+        console.log("Counting..");
       }
     }
   }
 
-  $game.on('click', () => {
+  $game.on("click", () => {
     if (!timerOn) {
       timerOn = true;
       timerId = setInterval(countDownLogic, 1000);
@@ -74,7 +74,37 @@ function init() {
     userSelection.push(this.id);
     console.log(userSelection);
   });
-
+  //Obviously this is not very dry code.
+  $(function () {
+    $("#q1true , #q1false").on("click", function () {
+      $("#q1false , #q1true").hide();
+    });
+  });
+  $(function () {
+    $("#q2true , #q2false").on("click", function () {
+      $("#q2false , #q2true").hide();
+    });
+  });
+  $(function () {
+    $("#q3true , #q3false").on("click", function () {
+      $("#q3false , #q3true").hide();
+    });
+  });
+  $(function () {
+    $("#q4true , #q4false").on("click", function () {
+      $("#q4false , #q4true").hide();
+    });
+  });
+  $(function () {
+    $("#q5true , #q5false").on("click", function () {
+      $("#q5false , #q5true").hide();
+    });
+  });
+  $(function () {
+    $("#q6true , #q6false").on("click", function () {
+      $("#q6false , #q6true").hide();
+    });
+  });
 
 
 
